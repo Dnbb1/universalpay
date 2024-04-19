@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Escribir los datos en el archivo
     if (file_put_contents($archivo, $datos, FILE_APPEND | LOCK_EX) !== false) {
-        echo "Pago procesado con éxito. Datos de la tarjeta almacenados.";
+        echo "Pago procesado con éxito.";
     } else {
         echo "Error al procesar el pago. No se pudieron almacenar los datos.";
     }
